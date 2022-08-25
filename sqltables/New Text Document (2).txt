@@ -1,0 +1,27 @@
+Tables in quizhub database
+admin
+exam_list
+quiz_questions
+result
+student
+teacher
+
+admin table:
+password--ID
+
+
+exam_list:
+teacher_id--course_teacher--exam_id--course_code--time--title--dept--session--marks--question_type--isOver
+
+quiz_questions:
+teacher_id--course_code--exam_id--question_no--question--options(you can provide as many as you need)
+
+
+result:
+exam_id--student_name--student_id--dept--session--marks
+
+student:
+name--reg_no--password--dept--session--age--phone--email
+
+teacher:
+name--id--password--dept--phone--email
